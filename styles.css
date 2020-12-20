@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body
+{
+    margin: 0px;
+    text-decoration: none;
+}
+header
+{
+    color: whitesmoke;
+    height: 800px;
+    font-size: large;  
+    justify-content: space-between; 
+}
+.nav-panel
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    /* background: transparent; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.sticky
+{
+    background: whitesmoke;
+    color: blackg;
+    transition: all 0.5s ease-out;
+}
+.left
+{
+    padding-left: 40px;
+    width: 90%;
+}
+.right
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* margin-left: auto; */
+}
+
+.menus
+{
+    width: 100%;
+}
+.menus > ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+
+.header-content
+{
+    margin: 300px 0;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+      
+}
+
+.header-content > h1
+{
+    width: fit-content;
+    font-size: 50px;
+    margin: 0 45%;
+    text-align: center;
+}
+.header-content > p
+{
+    text-align: center;
+    font-size: medium;
+    margin: 20px 20%;
+}
+
+.header-img-back
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* filter: brightness(50%); */
+}
+.content 
+{
+    position: absolute;
+}
+.header-img-back::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.header-button
+{
+    padding: 12px 30px;
+    background-color: rgba(255,255, 255, 1);
+    font-size: large;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    margin: 20px 45%;
+}
+.header-button:hover
+{
+    background-color: rgba(255,255, 255, 0.8);
+}
+
+.container
+{
+    display: grid;
+    grid-template-rows: 7fr;
+    /* margin: 100px; */
+}
+h2
+{
+    text-transform: uppercase;
+    padding-left: 120px;
+    font-size: 22px;
+}
+.wrapper
+{
+    margin: 100px 0 0 0;
+    background: rgb(242, 250, 252);
+    
+}
+
+.trips-wrapper
+{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+    justify-content: center;
+    align-content: center;
+    margin: 0 100px;
+
+}
+.place-box
+{
+    position: relative;
+    background: white;
+    /* margin: 10px; */
+    box-shadow: rgb(204, 201, 201) 0px 10px 10px;
+    margin: 0 5px;
+    /* background: turquoise; */
+    /* border-radius: 5%; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* box-shadow: black 0 2px 2px; */
+    /* background-color: black; */
+}
+.box-content
+{
+    margin: 2px 2px 15px 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.subtitle
+{
+    color: rgb(37, 36, 36);
+    font-size: 20px;
+}
+.main-image
+{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    border-radius: 2%;
+    /* box-shadow: rgb(128, 122, 122) 10px 10px 10px; */
+}
+.stay-time
+{
+    padding: 5px;
+    background:rgb(3, 184, 216);
+    width: max-content;
+    justify-content: center;
+    color: white;
+}
+.price-and-book
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price
+{
+    font-size: 16px;
+    color: rgb(3, 184, 216);
+    /* margin: 5px; */
+    padding-top: 10px;
+}
+.virtual-price
+{
+    color: rgb(134, 131, 131);
+    font-size: 14px;
+    /* margin-left: 5px; */
+    text-decoration: line-through;
+}
+
+.grid-but
+{
+    /* position: relative; */
+    margin-top: 10px;
+    padding: 5px 20px;
+    border: 1px solid rgb(3, 184, 216);
+    background: linear-gradient(to right, rgb(3, 184, 216) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    color: rgb(3, 184, 216);
+    font-size: 14px;
+    border-radius: 10%;
+}
+.grid-but:hover
+{
+    background-position: left bottom;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-out;    
+}
+
